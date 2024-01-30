@@ -1,0 +1,45 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Локальный веб-сервер для практики системных аналитиков по работе с документацией Swagger",
+        "title": "APITraningSA",
+        "contact": {
+            "email": "arpetuk1@mts.ru"
+        },
+        "version": "1.0"
+    },
+    "host": "localhost:8081",
+    "basePath": "/api/traning",
+    "paths": {
+        "/health": {
+            "get": {
+                "consumes": [
+                    "text/plain"
+                ],
+                "produces": [
+                    "text/plain"
+                ],
+                "tags": [
+                    "Health"
+                ],
+                "summary": "Запрос для проверки работы сервиса",
+                "responses": {
+                    "200": {
+                        "description": "Все заебись"
+                    },
+                    "400": {
+                        "description": "Ты долбаеб"
+                    },
+                    "500": {
+                        "description": "Все хуево"
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Health"
+        }
+    ]
+}

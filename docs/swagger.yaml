@@ -1,0 +1,29 @@
+basePath: /api/traning
+host: localhost:8081
+info:
+  contact:
+    email: arpetuk1@mts.ru
+  description: Локальный веб-сервер для практики системных аналитиков по работе с
+    документацией Swagger
+  title: APITraningSA
+  version: "1.0"
+paths:
+  /health:
+    get:
+      consumes:
+      - text/plain
+      produces:
+      - text/plain
+      responses:
+        "200":
+          description: Все заебись
+        "400":
+          description: Ты долбаеб
+        "500":
+          description: Все хуево
+      summary: Запрос для проверки работы сервиса
+      tags:
+      - Health
+swagger: "2.0"
+tags:
+- name: Health
